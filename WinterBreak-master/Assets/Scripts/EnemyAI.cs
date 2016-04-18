@@ -17,8 +17,8 @@ public class EnemyAI : MonoBehaviour {
 		agent = GetComponent<NavMeshAgent>();
 		playerNoise = player.GetComponent<AudioSource>();
 		chasePlayer = false;
-		minDistance = 5;
-		visionDistance = 200;
+		minDistance = 40;
+		visionDistance = 100;
 		agent.speed = 10.0f;
 	}
 	

@@ -27,6 +27,7 @@ public class FirstPersonController : MonoBehaviour {
 	CharacterController characterController;
 	GameObject fader;
 	GameObject itemScript;
+	Text narText;
 
 	// Use this for initialization
 	void Start () {
@@ -51,6 +52,7 @@ public class FirstPersonController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		print (this.transform.position);
 		if (gameOver == false) {
 			if (gameStart) {
 				fader.GetComponent<FadeScript> ().toClear ();
